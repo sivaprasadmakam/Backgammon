@@ -82,4 +82,24 @@ Backgammon is a game of strategy and chance. This web version allows you to play
    git clone https://github.com/bocaletto-luca/Backgammon.git
 2. Start WebServer and open index.html in Web Browser
 
+## Usage
+Starting a New Game: Click the New Game button to initialize the game with the standard Backgammon starting positions.
+
+Rolling the Dice: Click Roll Dice to generate your dice values. The values show how many points you can move. If you roll doubles, you get four moves.
+
+## Making a Move:
+
+Click on a point that contains your checkers to move them.
+
+If multiple moves are possible, a prompt will ask you to choose a die value.
+
+If you have checkers on the Bar, you must re-enter them first using your dice.
+
+Bot Turn: After you finish your moves, the Bot will automatically make its moves following the same rules.
+
+Win Condition: The game ends when either you or the Bot bears off all 15 checkers.
+
+Help: Click the Help button at the top right for detailed game instructions.
+
 #### Enjoy Game, By Bocaletto Luca
+ 
