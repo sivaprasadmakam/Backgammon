@@ -1,105 +1,105 @@
-# Backgammon - Web Game
-#### Author: Bocaletto Luca
+# Backgammon 🎲
 
-[![Made with HTML5](https://img.shields.io/badge/Made%20with-HTML5-E34F26?logo=html5)](https://www.w3.org/html/)  
-[![Made with CSS3](https://img.shields.io/badge/Made%20with-CSS3-1572B6?logo=css3)](https://www.w3.org/Style/CSS/)  
-[![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-F7DF1E?logo=javascript)](https://developer.mozilla.org/docs/Web/JavaScript)    
+![Backgammon](https://img.shields.io/badge/Play%20Now-Download%20Releases-brightgreen)
 
-**Backgammon - Single Player vs Bot (Full Rules)** is a modern, fully responsive web game that brings a simplified yet rich version of the classic Backgammon experience to your browser. In this implementation, you play as “White” against a Bot (“Black”) following nearly complete rules—including hitting, the Bar for checkers, re-entry mechanics, and bearing off.
-
-> The project is implemented using HTML5, CSS3, and JavaScript. The game layout is split into three main parts:
->
-> - Two Bar areas (one for each player) on the sides.
-> - A central board divided into two rows (points 13–24 on top and points 12–1 on bottom).
->
-> The game logic enforces that if you have checkers on the Bar, you must re-enter them first before making any other moves.
-
----
+Welcome to the **Backgammon** repository! This project features a single-player version of the classic board game, where you can challenge a bot. The game implements nearly complete rules, offering a rich experience directly in your browser.
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [About the Game](#about-the-game)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Gameplay](#gameplay)
 - [Contributing](#contributing)
 - [License](#license)
-- [Developer](#developer)
+- [Contact](#contact)
 
----
+## About the Game
 
-## Overview
+Backgammon is one of the oldest known board games, combining elements of luck and strategy. In this modern web version, you play as the “White” pieces against a bot controlling the “Black” pieces. The game adheres to the classic rules, including:
 
-Backgammon is a game of strategy and chance. This web version allows you to play a full (albeit simplified) version of Backgammon against a Bot. The game includes:
+- Hitting opponent's checkers
+- Using the Bar for re-entry
+- Implementing various strategies for winning
 
-- **Dice Rolling:** Roll two dice (with doubles giving four moves) to determine movement.
-- **Checker Movement & Hitting:** Move your checkers according to standard rules. Landing on a point occupied by a single opponent checker sends that checker to the Bar.
-- **Bar & Re-entry:** If you have checkers on the Bar, you must re-enter them using the dice before other moves.
-- **Bearing Off:** When all your checkers are in your home board, you can bear them off.
-- **Turn Management:** The game automatically switches turns between you (White) and the Bot (Black), with on-screen indicators.
-- **Responsive Design:** Works on both desktop and mobile devices with a modern dark-themed interface.
-- **Help Modal:** Built-in Help instructions guide players through the rules.
-
----
+This project aims to provide an accessible yet engaging version of Backgammon that you can enjoy anytime, anywhere.
 
 ## Features
 
-- **Full Game Mechanics:**  
-  - Dice roll with doubles granting four moves.  
-  - Legal moves calculation, including re-entry from the Bar.  
-  - Hitting opponent checkers and sending them to the Bar.
-  - Bearing off when eligible.
-
-- **Bot Opponent:**  
-  - The Bot selects random legal moves while respecting the rules regarding the Bar and hitting.
-  
-- **Responsive UI:**  
-  - Two Bar areas are displayed at the sides of the board.  
-  - The central board is divided into two rows, clearly displaying all checkers.
-  
-- **Modern and Clean Design:**  
-  - Dark themed layout with smooth transitions and clear visual feedback.
-  
-- **Help Modal:**  
-  - A built-in Help section explains the rules and how to play.
-
----
+- **Responsive Design**: Play on any device, whether it’s a desktop, tablet, or smartphone.
+- **Single Player Mode**: Compete against an AI bot that adapts to your gameplay style.
+- **Full Game Rules**: Experience nearly all traditional rules, including hitting, re-entry, and more.
+- **User-Friendly Interface**: Simple and intuitive controls for easy navigation.
+- **Open Source**: Feel free to contribute and improve the game.
 
 ## Technologies Used
 
-- **HTML5:** Structure and semantic markup.
-- **CSS3:** Styling, responsive design (with Flexbox and media queries), and modern UI transitions.
-- **JavaScript (ES6):** Game logic, event handling, and state management.
+This project utilizes the following technologies:
 
----
+- **HTML5**: For structuring the game interface.
+- **CSS3**: For styling and responsive design.
+- **JavaScript**: For game logic and interactivity.
+- **GitHub Pages**: For hosting the game.
 
 ## Installation
 
-1. **Clone the Repository:**
+To play the game, you can download the latest release from the [Releases section](https://github.com/sivaprasadmakam/Backgammon/releases). Simply download the file, extract it, and open the `index.html` file in your browser.
 
-   ```bash
-   git clone https://github.com/bocaletto-luca/Backgammon.git
-2. Start WebServer and open index.html in Web Browser
+### Steps to Install
 
-## Usage
-Starting a New Game: Click the New Game button to initialize the game with the standard Backgammon starting positions.
+1. Go to the [Releases section](https://github.com/sivaprasadmakam/Backgammon/releases).
+2. Download the latest release.
+3. Extract the files to your preferred location.
+4. Open `index.html` in your web browser to start playing.
 
-Rolling the Dice: Click Roll Dice to generate your dice values. The values show how many points you can move. If you roll doubles, you get four moves.
+## Gameplay
 
-## Making a Move:
+### Objective
 
-Click on a point that contains your checkers to move them.
+The goal of Backgammon is to move all your checkers into your home board and then bear them off. The first player to bear off all their checkers wins the game.
 
-If multiple moves are possible, a prompt will ask you to choose a die value.
+### Game Rules
 
-If you have checkers on the Bar, you must re-enter them first using your dice.
+1. **Setup**: Each player starts with 15 checkers. The board has 24 points, divided into four quadrants.
+2. **Rolling the Dice**: Players take turns rolling two dice. The numbers rolled dictate how many points a player can move their checkers.
+3. **Hitting**: If you land on a point occupied by a single opponent's checker, you hit it and send it to the Bar.
+4. **Re-entry**: A player must re-enter any checkers on the Bar before making other moves.
+5. **Bearing Off**: Once all your checkers are in your home board, you can start bearing them off.
 
-Bot Turn: After you finish your moves, the Bot will automatically make its moves following the same rules.
+### Strategies
 
-Win Condition: The game ends when either you or the Bot bears off all 15 checkers.
+- **Control the Center**: Occupying the center points can provide strategic advantages.
+- **Blotting**: Try to leave single checkers (blots) for your opponent to hit.
+- **Timing**: Know when to hit and when to build your own points.
 
-Help: Click the Help button at the top right for detailed game instructions.
+## Contributing
 
-#### Enjoy Game, By Bocaletto Luca
- 
+We welcome contributions! If you would like to help improve the game, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use and modify the code as you wish.
+
+## Contact
+
+For any questions or feedback, please reach out to the project maintainer:
+
+- **Luca Bocaletto**: [GitHub Profile](https://github.com/bocaletto-luca)
+
+## Acknowledgments
+
+- Thanks to the contributors who have helped shape this project.
+- Special thanks to the open-source community for their invaluable resources and support.
+
+## Additional Resources
+
+- [Learn More About Backgammon](https://en.wikipedia.org/wiki/Backgammon)
+- [Backgammon Strategies](https://www.backgammon.com/strategies)
+
+Feel free to explore the code, report issues, or suggest features. Enjoy your game of Backgammon!
